@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>THE BIG Hotel</title>
+
+    <link rel="icon" href="img/hotel-solid.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+
+      body{
+        background-color:whitesmoke;
+        overflow-x: hidden;
+      }
+      div.head a{
+        
+        color: white;
+      }
+      div.head a:hover{
+        color: red;
+
+      }
+      #navbarNav ul li{
+        
+        font-weight: bold;
+        font-size: 18px;
+        font-family:'Times New Roman', Times, serif;
+      }
+      
+
+      div.slogun{
+        background-color: darksalmon;
+        height: 80px;
+      }
+      div.slogun p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 10px;
+        
+      }
+      div#gallery img:hover{
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        
+      }
+      div#abtus p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: justify;
+        text-indent: 50px;
+        color: green;
+      }
+      div.abtus{
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      }
+      div.contact p a{
+        color: gray;
+        text-decoration: none;
+      }
+      div.contact p a:hover{
+        color: brown;
+      }
+      div.contact{
+        /* background-image: url('img/bg.jpg'); 
+        background-size: cover;
+        background-attachment: fixed; 
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+
+      }
+      div.footer{
+        /* background-image: url('img/bg.jpg'); */
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+        background-image: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+        
+        padding: 20px;
+        /* background-size: cover;
+        background-attachment: fixed; */
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+      }
+      div.footer a i{
+        color: black;
+      }
+      div.footer a i:hover{
+        color: rgb(255, 0, 0);
+        
+      }
+      div.book{
+        background-color: rgba(0, 0, 0, 0.44);
+
+        background-color: rgba(255, 140, 0, 0.447);
+      }
+      
+      
+
+    </style>
+  
+  </head>
+  <body>
+    <div class="fluid-container">
+      <div class="head bg-dark text-light p-2">
+        <div class="row">
+            <div class="col-sm-3 text-center"><i class="fa-solid fa-phone fa-lg">  </i> +91 987654321</div>
+            <div class="col-sm-3 text-center"><i class="fa-solid fa-envelope fa-lg"></i> Demo@gmail.com </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-1 text-center"> <a href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a> </div>
+            <div class="col-sm-1 text-center"><a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a></div>
+            <div class="col-sm-1 text-center"><a href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a></div>
+
+
+        </div>
+      </div>
+      
+      <nav class="navbar navbar-expand-lg bg-body sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.avif" alt="" width="200px" height="70px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-3" id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#abtus">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rooms">ROOMS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a href="#book"><button type="button" class="btn btn-outline-success">BOOK NOW</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/car1.jpg" class="d-block w-100" alt="carousel">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="img/car2.jpg" class="d-block w-100" alt="carousel">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="img/car3.jpg" class="d-block w-100" alt="carousel">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="slogun text-center mb-5">
+
+        
+        <p> The <span style="color: turquoise;">BIG Hotel</span> is an ideal starting point for many destinations in the NASHIK. Our 3-star hotel is located in the center of Nashik, with 75 non-smoking rooms. </p>
+         
+
+      </div>
+
+      <div class="gallery mb-5" id="gallery">
+        <h1 class="text-center mb-3 p-3" style="font-family: 'Times New Roman', Times, serif; color: orangered;">
+          GALLERY
+        </h1>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">  <img src="img/room1.jpg" alt="roomIMG" width="250px" height="auto" class="rounded"></div>
+            <div class="col-sm-3"> <img src="img/room2.jpg" alt="roomIMG" width="250px" height="auto" class="rounded"> </div>
+            <div class="col-sm-3"> <img src="img/room3.jpg" alt="roomIMG" width="250px" height="auto" class="rounded"> </div>
+            <div class="col-sm-3"> <img src="img/room4.jpg" alt="roomIMG" width="250px" height="auto" class="rounded"> </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class=" container abtus mb-5 p-1 rounded" id="abtus">
+        <h1 class="text-center mb-3 p-3" style="font-family: 'Times New Roman', Times, serif; color: orangered;">
+          ABOUT US
+        </h1>
+
+        <div class="container">
+            <p> The BIG Hotel is an ideal starting point for many destinations in the Nashik area. Our 3-star hotel is located in the CBS, with 75 non-smoking rooms, air-conditioned conference rooms and a beautiful lounge with a separate smoking area. The hotel has been lovingly renovated in recent years. An ideal transport connection to Ozar Airport (15 km) and to CBS,  and to the commercial areas of the surrounding cities of MUMBAI and PUNE enable a quick journey to your business or trade fair appointment. Numerous restaurants, shops and cafes are within walking distance of our hotel. The BIG Hotel ensures a successful stay at the gates of the trade fair city of Nashik. </p>
+        </div>
+
+      </div>
+
+      <div class=" container rooms mb-5 rounded" id="rooms">
+        <h1 class="text-center mb-3 p-3" style="font-family: 'Times New Roman', Times, serif; color: orangered;">
+          ROOMS
+        </h1>
+
+        <div class="container">
+          <div class="row">
+            
+              <div class="col-sm-6"> 
+                <div class="card text-bg-dark">
+                  <img src="img/room2.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title"> <mark> Couple Rooms </mark> </h5>
+                    <p class="card-text"><mark> We have rooms for couple starting for 1500rs/- </mark></p>
+
+                    <button type="button" class="btn btn-warning float-end">BOOK NOW</button>
+                    
+                  </div>
+                </div>  
+              </div>
+           
+
+            <div class="col-sm-6">  
+              <div class="card text-bg-dark text-light">
+                <img src="img/room3.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title"> <mark> Family Rooms </mark> </h5>
+                  <p class="card-text"> <mark> We have rooms for family of 5 people starting for 3000rs/- </mark></p>
+                  <button type="button" class="btn btn-warning float-end">BOOK NOW</button>
+                </div>
+              </div>  
+            </div>
+
+            
+
+            
+          </div>
+        </div>
+        
+
+      </div>
+
+      <div class="book mb-5 p-2" id="book">
+
+        <h1 class="text-center mb-3 p-3" style="font-family: 'Times New Roman', Times, serif; color: white;">
+          BOOK NOW
+        </h1>
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-3"> 
+              <div class="form-floating mb-3">
+                <input type="datetime-local" class="form-control" id="floatingInput" >
+                <label for="floatingInput">Arrival</label>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-floating mb-3">
+                <input type="datetime-local" class="form-control" id="floatingInput" >
+                <label for="floatingInput">Departure</label>
+              </div>
+            </div>
+            <div class="col-sm-3 pt-1">
+              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected class="text-muted">Number Of Guest</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">Five</option>
+              </select>
+            </div>
+            <div class="col-sm-3 pt-2">
+              <div class="d-grid ">
+                <button class="btn btn-outline-dark" type="button"><b>BOOK NOW</b> </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="contact container mb-3 p-1" id="contact">
+        <h1 class="text-center p-2" style="font-family: 'Times New Roman', Times, serif; color: orangered;">
+          CONTACT US
+        </h1>
+        <hr>
+        
+  
+        <div class="row">
+          <div class="col-sm-6"> 
+            <h5><i class="fa-solid fa-house"></i> Address :-</h5>  
+            <p> <a href="https://goo.gl/maps/X2HYjCmwa8rAzFHR6"> Center Of Nashik CBS Nashik, Maharashtra. </a> </p><br>
+
+            <h5><i class="fa-brands fa-square-whatsapp"></i> Whatsapp No :- </h5>
+            <p><a href="#"> +91 987654321 </a></p><br>
+
+            <h5><i class="fa-solid fa-envelope"></i> Mail Id :- </h5>
+            <p><a href="#"> Demo@gmail.com </a></p><br>
+
+            <p> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14990.053497980098!2d73.9067597!3d20.0708156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddc3c4f94d7e9d%3A0xb2c86bbea92d59ab!2s10th%20Mile%20Square%2C%20Dindori%20Rd%2C%20Maharashtra%20422207%2C%20India!5e0!3m2!1sen!2sin!4v1676114508218!5m2!1sen!2sin" width="400" height="200" style="border:2px solid grey;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </p>
+          </div>
+          <div class="col-sm-6"> 
+            
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="floatingInput" placeholder="number">
+              <label for="floatingInput">Mobile Number</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-outline-success">Success</button>
+            </div>
+
+          </div>
+        </div>
+      </div> 
+
+
+      <div class="footer">
+        <div class="container">
+          <div class="row mb-2">
+
+            <div class="col-sm-4">
+              <img src="img/logo.avif" alt="">
+            </div>
+            <div class="col-sm-4 text-white text-center">
+              <h4 class=""> Follow us On </h4>
+              <a href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a> 
+              <a href="#" class="m-5"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+
+            </div>
+            <div class="col-sm-4 text-white text-center ">
+              <h5 class="mt-4"> We Wish You Have Happy Stay. </h5>
+            </div>
+          </div>
+            <hr>
+            <h6 class="text-center text-light"> 2023 All Copy Rights Reserved By This Website. </h6>
+
+          
+        </div>
+      </div>
+      
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
