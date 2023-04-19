@@ -19,6 +19,7 @@
         background-color:whitesmoke;
         overflow-x: hidden;
       }
+      
       div.head a{
         
         color: white;
@@ -29,7 +30,7 @@
       }
      
       .navbar ul li a:hover{
-        color: red;
+        color: darkred;
         
       }
 
@@ -41,7 +42,7 @@
       }
       
 
-      div.slogun{
+      /* div.slogun{
         background-color: darksalmon;
         height: 80px;
       }
@@ -51,7 +52,27 @@
         font-weight: 400;
         padding: 10px;
         
-      }
+      } */
+
+      div.demo{
+            
+            background-color: darksalmon;
+            display: flex;
+            flex-wrap: nowrap;
+            
+        }
+
+        .contain{
+            
+            
+            text-align: justify;
+            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 10px;
+        }
+
       div#gallery img:hover{
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         
@@ -102,6 +123,12 @@
         background-color: rgba(0, 0, 0, 0.44);
 
         background-color: rgba(255, 140, 0, 0.447);
+      }
+
+      .flogo a i{
+        font-size: 25px;
+        margin-top: 30px;
+        
       }
       
       
@@ -187,7 +214,7 @@
         </button>
       </div>
 
-      <div class="slogun text-center mb-5">
+      <!-- <div class="slogun text-center mb-5">
 
         <div class="row">  
           <div class="col-xs-8">    
@@ -195,6 +222,11 @@
           </div>    
         </div>
          
+      </div> -->
+
+      <div class="demo mb-5 ">
+        <div class="contain container text-center">
+          <p> The <span style="color: turquoise;">BIG Hotel</span> is an ideal starting point for many destinations in the NASHIK. Our 3-star hotel is located in the center of Nashik, with 75 non-smoking rooms. </p>        </div>
       </div>
 
       <div class="gallery mb-5 " id="gallery">
@@ -358,14 +390,14 @@
       </div> 
 
 
-      <div class="footer">
+      <div class="footer rounded">
         <div class="container">
-          <div class="row mb-2">
+          <div class="row mb-2 g-4">
 
-            <div class="col-sm-4">
+            <div class="col-sm-4 text-center">
               <img src="img/logo.avif" alt="">
             </div>
-            <div class="col-sm-4 text-white text-center">
+            <div class="col-sm-4 text-white text-center flogo">
               <h4 class=""> Follow us On </h4>
               <a href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a> 
               <a href="#" class="m-5"><i class="fa-brands fa-instagram fa-lg"></i></a>
@@ -373,7 +405,7 @@
 
             </div>
             <div class="col-sm-4 text-white text-center ">
-              <h5 class="mt-4"> We Wish You Have Happy Stay. </h5>
+              <h5 class="mt-5"> We Wish You Have Happy Stay. </h5>
             </div>
           </div>
             <hr>
